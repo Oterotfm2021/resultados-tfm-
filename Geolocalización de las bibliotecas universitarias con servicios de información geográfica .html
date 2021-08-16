@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_f5d334bf4caf4198bbc6ea87b73b71d7 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f5d334bf4caf4198bbc6ea87b73b71d7" ></div>
+        
+</body>
+<script>    
+    
+            var map_f5d334bf4caf4198bbc6ea87b73b71d7 = L.map(
+                "map_f5d334bf4caf4198bbc6ea87b73b71d7",
+                {
+                    center: [40.9140084, -6.2876236],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 7.5,
+                    zoomControl: false,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d2bfdb010cb4434a80921f7ee1dd10b8 = L.tileLayer(
+                "https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoibGFuZHlzIiwiYSI6ImNraHFjeXA1NzA1ZzkycW11cjl3dnpyMnAifQ.7mSkfJjaSfJXoGBxa_rg1g",
+                {"attribution": "Mapbox", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var marker_c500487ef7854554bf953841be577806 = L.marker(
+                [43.3725006, -8.3953312],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_1dc5ef9d346148bc998e98be0cf8a0e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_c500487ef7854554bf953841be577806.setIcon(icon_1dc5ef9d346148bc998e98be0cf8a0e1);
+        
+    
+            marker_c500487ef7854554bf953841be577806.bindTooltip(
+                `<div>
+                     Universidad de la Coruña (UDC)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9947468dc7624429a1d0fbe753bd3426 = L.marker(
+                [40.546698299999996, -3.6943619],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_c6af025e95ca4cda8af0327994fdb879 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "cadetblue", "prefix": "fa"}
+            );
+            marker_9947468dc7624429a1d0fbe753bd3426.setIcon(icon_c6af025e95ca4cda8af0327994fdb879);
+        
+    
+            marker_9947468dc7624429a1d0fbe753bd3426.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Madrid (UAM)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_02fef88d58c94067942f224f8f02007a = L.marker(
+                [39.9937327, -0.0696993],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_0e607a78395b445f8e5ec913de3f7900 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "blue", "prefix": "fa"}
+            );
+            marker_02fef88d58c94067942f224f8f02007a.setIcon(icon_0e607a78395b445f8e5ec913de3f7900);
+        
+    
+            marker_02fef88d58c94067942f224f8f02007a.bindTooltip(
+                `<div>
+                     Universidad Jaime I (UJI)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_9f6e9139dd7440de9046521d13bdf0a3 = L.marker(
+                [41.50142520000001, 2.1058174],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_e08ac117e6b84fbd86252958a68c93dd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "orange", "prefix": "fa"}
+            );
+            marker_9f6e9139dd7440de9046521d13bdf0a3.setIcon(icon_e08ac117e6b84fbd86252958a68c93dd);
+        
+    
+            marker_9f6e9139dd7440de9046521d13bdf0a3.bindTooltip(
+                `<div>
+                     Universidad Autónoma de Barcelona (UAB)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_701b2e56965e4a2ca21929b8b255f1a4 = L.marker(
+                [41.386779100000005, 2.1615391],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_cfe8d1d6e390429f92dfb6d0c6d0e3ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_701b2e56965e4a2ca21929b8b255f1a4.setIcon(icon_cfe8d1d6e390429f92dfb6d0c6d0e3ea);
+        
+    
+            marker_701b2e56965e4a2ca21929b8b255f1a4.bindTooltip(
+                `<div>
+                     Universidad de Barcelona (UB)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a1ba6d92a1204ffc80a84a7b0c6ecb7a = L.marker(
+                [41.388003999999995, 2.1132804],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_080620ebed7c4856b8a64e3f60546132 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a1ba6d92a1204ffc80a84a7b0c6ecb7a.setIcon(icon_080620ebed7c4856b8a64e3f60546132);
+        
+    
+            marker_a1ba6d92a1204ffc80a84a7b0c6ecb7a.bindTooltip(
+                `<div>
+                     Universidad Politécnica de Cataluña (UPC)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_911e2ec1caf74a54b428a1e6aa8ca844 = L.marker(
+                [37.60569008, -0.9764209999999999],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_7860b351bf564fb8b5bd53c7fee621ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_911e2ec1caf74a54b428a1e6aa8ca844.setIcon(icon_7860b351bf564fb8b5bd53c7fee621ee);
+        
+    
+            marker_911e2ec1caf74a54b428a1e6aa8ca844.bindTooltip(
+                `<div>
+                     Universidad Politécnica de Cartagena (UPCT)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_d1a83dac6fa640a186eda5a2da5a6629 = L.marker(
+                [40.4486372, -3.7192797999999994],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_2df28cb2f5374677b4d731f33ca5b227 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_d1a83dac6fa640a186eda5a2da5a6629.setIcon(icon_2df28cb2f5374677b4d731f33ca5b227);
+        
+    
+            marker_d1a83dac6fa640a186eda5a2da5a6629.bindTooltip(
+                `<div>
+                     Universidad Politécnica de Madrid (UPM)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a6815a7a289c41ce848e3dab6b5a3fe4 = L.marker(
+                [39.480802600000004, -0.3428186],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_e9453b6767474b338012a07570482c0c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a6815a7a289c41ce848e3dab6b5a3fe4.setIcon(icon_e9453b6767474b338012a07570482c0c);
+        
+    
+            marker_a6815a7a289c41ce848e3dab6b5a3fe4.bindTooltip(
+                `<div>
+                     Universidad Politécnica de Valencia (UPV)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_df158e9f78714d4ebc33b26e51f2518f = L.marker(
+                [40.324687299999994, -3.7632116],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_1acd8b7d068e48a3bfbf4a81e637454a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_df158e9f78714d4ebc33b26e51f2518f.setIcon(icon_1acd8b7d068e48a3bfbf4a81e637454a);
+        
+    
+            marker_df158e9f78714d4ebc33b26e51f2518f.bindTooltip(
+                `<div>
+                     Universidad de Carlos III de Madrid (UC3M)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_a0b373a6b4564106b37ae29bec03f7f7 = L.marker(
+                [41.985706799999996, 2.8250124],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_201f0c6e7d35416cad84e78cd0a6626d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "gray", "prefix": "fa"}
+            );
+            marker_a0b373a6b4564106b37ae29bec03f7f7.setIcon(icon_201f0c6e7d35416cad84e78cd0a6626d);
+        
+    
+            marker_a0b373a6b4564106b37ae29bec03f7f7.bindTooltip(
+                `<div>
+                     Universidad de Girona (UdG)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8ee4fcd561e249888975c69516ba123c = L.marker(
+                [41.3890688, 2.1898562000000004],
+                {"opacity": 1}
+            ).addTo(map_f5d334bf4caf4198bbc6ea87b73b71d7);
+        
+    
+            var icon_73ebfed2d4134b6fac8c63403ae11da5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "university", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8ee4fcd561e249888975c69516ba123c.setIcon(icon_73ebfed2d4134b6fac8c63403ae11da5);
+        
+    
+            marker_8ee4fcd561e249888975c69516ba123c.bindTooltip(
+                `<div>
+                     Universdad Pompeu Fabra (UPF)
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
