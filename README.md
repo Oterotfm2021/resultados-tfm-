@@ -1,2 +1,1 @@
-# Análisis de los servicios de información geográfica en bibliotecas universitarias españolas 
-El repositorio acoge dos ficheros resultados de la investigación del Trabajo Fin de Master: Análisis de los servicios de información geográfica en bibliotecas universitarias españolas. Master en Documentación por la Universidad de Alcalá, 2021. El fichero Excel contiene los datos obtenidos tras la aplicación de los criterios e indicadores para identificar las características de los servicios. Su disponibilidad está dada para la consulta y reutilización a investigaciones que puedan tener objetivos similares o quieran comparar los datos. Para su entendimiento deben ser consultados tras la lectura del informe de resultados del TFM.
+
